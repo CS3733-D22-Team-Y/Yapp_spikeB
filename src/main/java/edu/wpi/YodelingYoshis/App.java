@@ -11,6 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class App extends Application {
+  private Stage primaryStage;
 
   @Override
   public void init() {
