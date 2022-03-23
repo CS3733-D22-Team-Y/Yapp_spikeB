@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.YodelingYoshis.controllers.requestMenuController">
+   <children>
+      <JFXButton layoutX="100.0" layoutY="100.0" onAction="#request1" prefHeight="150.0" prefWidth="600.0" style="-fx-background-color: blue; -fx-font-size: 80;" text="Request 1" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="100.0" layoutY="343.0" onAction="#request1" prefHeight="150.0" prefWidth="600.0" style="-fx-background-color: blue; -fx-font-size: 80;" text="Request 1" textFill="WHITE">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="100.0" layoutY="586.0" onAction="#request1" prefHeight="150.0" prefWidth="600.0" style="-fx-background-color: blue; -fx-font-size: 80;" text="Request 1" textFill="WHITE">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="100.0" layoutY="829.0" onAction="#request1" prefHeight="150.0" prefWidth="600.0" style="-fx-background-color: blue; -fx-font-size: 80;" text="Request 1" textFill="WHITE">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1220.0" layoutY="100.0" onAction="#request1" prefHeight="150.0" prefWidth="600.0" style="-fx-background-color: blue; -fx-font-size: 80;" text="Request 1" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1220.0" layoutY="343.0" onAction="#request1" prefHeight="150.0" prefWidth="600.0" style="-fx-background-color: blue; -fx-font-size: 80;" text="Request 1" textFill="WHITE">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1220.0" layoutY="586.0" onAction="#request1" prefHeight="150.0" prefWidth="600.0" style="-fx-background-color: blue; -fx-font-size: 80;" text="Request 1" textFill="WHITE">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1220.0" layoutY="829.0" onAction="#request1" prefHeight="150.0" prefWidth="600.0" style="-fx-background-color: blue; -fx-font-size: 80;" text="Request 1" textFill="WHITE">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
