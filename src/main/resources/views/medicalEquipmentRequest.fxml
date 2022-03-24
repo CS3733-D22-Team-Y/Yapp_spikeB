@@ -73,12 +73,12 @@
                   <Font size="36.0" />
                </font>
             </JFXRadioButton>
-            <JFXRadioButton layoutX="12.0" layoutY="115.0" text="Infusion Pump (16 of 30 free)">
+            <JFXRadioButton layoutX="12.0" layoutY="116.0" text="Infusion Pump (16 of 30 free)">
                <font>
                   <Font size="36.0" />
                </font>
             </JFXRadioButton>
-            <JFXRadioButton layoutX="12.0" layoutY="167.0" text="Recliner (2 of 6 free)">
+            <JFXRadioButton layoutX="12.0" layoutY="168.0" text="Recliner (2 of 6 free)">
                <font>
                   <Font size="36.0" />
                </font>
