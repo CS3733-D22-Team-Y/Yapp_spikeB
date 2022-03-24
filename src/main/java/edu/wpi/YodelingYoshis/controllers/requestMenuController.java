@@ -1,29 +1,50 @@
 package edu.wpi.YodelingYoshis.controllers;
 
+import edu.wpi.YodelingYoshis.App;
 import java.awt.*;
 import java.io.IOException;
-import java.util.Objects;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
 
 public class requestMenuController {
 
-  private Stage stage;
-  private Scene scene;
-  private Parent root;
+  @FXML
+  void securityServices(ActionEvent event) throws IOException {
+    App.getInstance().setSceneToSecurityServicesRequest();
+  }
 
   @FXML
-  void request1(ActionEvent event) throws IOException {
-    Parent root =
-        FXMLLoader.load(getClass().getResource("templateFeature.fxml"));
-    stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-    scene = new Scene(root);
-    stage.setScene(scene);
-    stage.show();
+  void medicalEquipment(ActionEvent event) throws IOException {
+    App.getInstance().setSceneToSecurityServicesRequest();
+  }
+
+  @FXML
+  void floralDelivery(ActionEvent event) throws IOException {
+    App.getInstance().setSceneToSecurityServicesRequest();
+  }
+
+  @FXML
+  void laundryServices(ActionEvent event) throws IOException {
+    App.getInstance().setSceneToSecurityServicesRequest();
+  }
+
+  @FXML
+  void languageInterpreters(ActionEvent event) throws IOException {
+    App.getInstance().setSceneToSecurityServicesRequest();
+  }
+
+  @FXML
+  void religousRequests(ActionEvent event) throws IOException {
+    App.getInstance().setSceneToSecurityServicesRequest();
+  }
+
+  @FXML
+  void patientTransport(ActionEvent event) throws IOException {
+    App.getInstance().setSceneToSecurityServicesRequest();
+  }
+
+  @FXML
+  void maintenanceRequests(ActionEvent event) throws IOException {
+    App.getInstance().setSceneToSecurityServicesRequest();
   }
 }
