@@ -68,7 +68,9 @@ jacocoTestCoverageVerification {
             limit {
                 counter = 'CLASS'
                 value = 'COVEREDRATIO'
+
                 minimum = 0.0
+
             }
             excludes = codeCoverageExcludes
         }
@@ -78,6 +80,7 @@ jacocoTestCoverageVerification {
             limit {
                 counter = 'LINE'
                 value = 'COVEREDRATIO'
+
                 minimum = 0.0
             }
             excludes = codeCoverageExcludes

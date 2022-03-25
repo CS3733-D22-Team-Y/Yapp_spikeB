@@ -11,6 +11,23 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class App extends Application {
+  private Stage primaryStage;
+  private Scene securityServicesRequest;
+  private Scene requestMenu;
+
+  public void setSceneToRequestMenu() {
+    primaryStage.setScene(requestMenu);
+  }
+
+  public void setSceneToSecurityServicesRequest() {
+    primaryStage.setScene(securityServicesRequest);
+  }
+
+  private static App instance;
+
+  public static App getInstance() {
+    return instance;
+  }
 
   @Override
   public void init() {
@@ -18,17 +35,26 @@ public class App extends Application {
   }
 
   @Override
-  public void start(Stage primaryStage) {
-    FXMLLoader loader = new FXMLLoader();
-    try {
-      Parent root =
-          loader.load(
-              Objects.requireNonNull(getClass().getResource("/views/request_template.fxml")));
-      primaryStage.setScene(new Scene(root));
-    } catch (IOException e) {
-      e.printStackTrace();
-    }
+
+  public void start(Stage primaryStage) throws IOException {
+    instance = this;
+    this.primaryStage = primaryStage;
+    Parent root =
+        FXMLLoader.load(Objects.requireNonNull(getClass().getResource("views/requestMenu.fxml")));
+    Scene scene = new Scene(root);
+    primaryStage.setScene(scene);
     primaryStage.show();
+
+    requestMenu =
+        new Scene(
+            FXMLLoader.load(
+                Objects.requireNonNull(App.class.getResource("views/requestMenu.fxml"))));
+    securityServicesRequest =
+        new Scene(
+            FXMLLoader.load(
+                Objects.requireNonNull(
+                    App.class.getResource("views/securityServicesRequest.fxml"))));
+
   }
 
   @Override
