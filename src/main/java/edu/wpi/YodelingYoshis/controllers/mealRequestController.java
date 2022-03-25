@@ -8,6 +8,6 @@ import javafx.fxml.FXML;
 public class mealRequestController {
   @FXML
   void backToRequestMenu(ActionEvent event) throws IOException {
-    App.getInstance().setSceneToRequestMenu();
+    App.getInstance().setSceneToRequestMenu(); //Returns to request menu
   }
 }
