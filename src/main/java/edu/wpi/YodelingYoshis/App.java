@@ -35,6 +35,7 @@ public class App extends Application {
   }
 
   @Override
+
   public void start(Stage primaryStage) throws IOException {
     instance = this;
     this.primaryStage = primaryStage;
@@ -53,6 +54,7 @@ public class App extends Application {
             FXMLLoader.load(
                 Objects.requireNonNull(
                     App.class.getResource("views/securityServicesRequest.fxml"))));
+
   }
 
   @Override
