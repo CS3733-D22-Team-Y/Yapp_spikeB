@@ -5,7 +5,7 @@ import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
-public class mealRequestController {
+public class laundryRequestController {
   @FXML
   void backToRequestMenu(ActionEvent event) throws IOException {
     App.getInstance().setSceneToRequestMenu();
