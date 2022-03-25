@@ -19,8 +19,7 @@ public class App extends Application {
   private Scene medicalEquipmentRequest;
   private Scene mealRequest;
 
-
-  //Methods to change the scene to the corresponding Request
+  // Methods to change the scene to the corresponding Request
   public void setSceneToRequestMenu() {
     primaryStage.setScene(requestMenu);
   }
@@ -46,7 +45,7 @@ public class App extends Application {
   }
 
   private static App instance;
-//Summons instances for scene change implementation
+  // Summons instances for scene change implementation
   public static App getInstance() {
     return instance;
   }
@@ -58,16 +57,16 @@ public class App extends Application {
 
   @Override
   public void start(Stage primaryStage) throws IOException {
-    instance = this; //instantiates instance
+    instance = this; // instantiates instance
     this.primaryStage = primaryStage;
-    //Sets the primary scene (currently request menu) and displays it
+    // Sets the primary scene (currently request menu) and displays it
     Parent root =
         FXMLLoader.load(Objects.requireNonNull(getClass().getResource("views/requestMenu.fxml")));
     Scene scene = new Scene(root);
     primaryStage.setScene(scene);
     primaryStage.show();
 
-    //Creates scenes for the corresponding fxml files
+    // Creates scenes for the corresponding fxml files
     requestMenu =
         new Scene(
             FXMLLoader.load(

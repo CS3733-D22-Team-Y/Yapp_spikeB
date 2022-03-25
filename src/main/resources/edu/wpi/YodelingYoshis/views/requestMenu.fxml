@@ -51,7 +51,7 @@
                         <Font size="81.0" />
                      </font>
                   </JFXButton>
-                  <Label prefHeight="100.0" prefWidth="400.0" text="More coming soon..." textAlignment="CENTER" textFill="#021d5a">
+                  <Label prefHeight="100.0" prefWidth="400.0" text="More to come..." textFill="#021d5a">
                      <font>
                         <Font size="40.0" />
                      </font>
@@ -69,7 +69,7 @@
             </VBox>
          </right>
          <top>
-            <Label prefHeight="84.0" prefWidth="422.0" text="Request A Service" textAlignment="CENTER" textFill="#021d5a" BorderPane.alignment="CENTER">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="627.0" text="Request A Service" textAlignment="CENTER" textFill="#021d5a" textOverrun="CLIP" BorderPane.alignment="CENTER">
                <font>
                   <Font name="System Bold" size="54.0" />
                </font>
