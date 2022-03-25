@@ -14,6 +14,10 @@ public class App extends Application {
   private Stage primaryStage;
   private Scene securityServicesRequest;
   private Scene requestMenu;
+  private Scene floralRequest;
+  private Scene laundryRequest;
+  private Scene medicalEquipmentRequest;
+  private Scene mealRequest;
 
   public void setSceneToRequestMenu() {
     primaryStage.setScene(requestMenu);
@@ -21,6 +25,22 @@ public class App extends Application {
 
   public void setSceneToSecurityServicesRequest() {
     primaryStage.setScene(securityServicesRequest);
+  }
+
+  public void setSceneToFloralRequest() {
+    primaryStage.setScene(floralRequest);
+  }
+
+  public void setSceneToLaundryRequest() {
+    primaryStage.setScene(laundryRequest);
+  }
+
+  public void setSceneToMedicalEquipmentRequest() {
+    primaryStage.setScene(medicalEquipmentRequest);
+  }
+
+  public void setSceneToMealRequest() {
+    primaryStage.setScene(mealRequest);
   }
 
   private static App instance;
@@ -35,7 +55,6 @@ public class App extends Application {
   }
 
   @Override
-
   public void start(Stage primaryStage) throws IOException {
     instance = this;
     this.primaryStage = primaryStage;
@@ -54,7 +73,23 @@ public class App extends Application {
             FXMLLoader.load(
                 Objects.requireNonNull(
                     App.class.getResource("views/securityServicesRequest.fxml"))));
-
+    floralRequest =
+        new Scene(
+            FXMLLoader.load(
+                Objects.requireNonNull(App.class.getResource("views/floralRequest.fxml"))));
+    laundryRequest =
+        new Scene(
+            FXMLLoader.load(
+                Objects.requireNonNull(App.class.getResource("views/laundryRequest.fxml"))));
+    mealRequest =
+        new Scene(
+            FXMLLoader.load(
+                Objects.requireNonNull(App.class.getResource("views/mealRequest.fxml"))));
+    medicalEquipmentRequest =
+        new Scene(
+            FXMLLoader.load(
+                Objects.requireNonNull(
+                    App.class.getResource("views/medicalEquipmentRequest.fxml"))));
   }
 
   @Override

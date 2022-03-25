@@ -15,22 +15,22 @@ public class requestMenuController {
 
   @FXML
   void medicalEquipment(ActionEvent event) throws IOException {
-    App.getInstance().setSceneToSecurityServicesRequest();
+    App.getInstance().setSceneToMedicalEquipmentRequest();
   }
 
   @FXML
   void floralDelivery(ActionEvent event) throws IOException {
-    App.getInstance().setSceneToSecurityServicesRequest();
+    App.getInstance().setSceneToFloralRequest();
   }
 
   @FXML
   void laundryServices(ActionEvent event) throws IOException {
-    App.getInstance().setSceneToSecurityServicesRequest();
+    App.getInstance().setSceneToLaundryRequest();
   }
 
   @FXML
-  void languageInterpreters(ActionEvent event) throws IOException {
-    App.getInstance().setSceneToSecurityServicesRequest();
+  void mealDelivery(ActionEvent event) throws IOException {
+    App.getInstance().setSceneToMealRequest();
   }
 
   @FXML
