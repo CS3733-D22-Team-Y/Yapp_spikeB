@@ -9,6 +9,6 @@ import javafx.fxml.FXML;
 public class securityServicesRequestController {
   @FXML
   void backToRequestMenu(ActionEvent event) throws IOException {
-    App.getInstance().setSceneToRequestMenu(); //Returns to request menu
+    App.getInstance().setSceneToRequestMenu(); // Returns to request menu
   }
 }

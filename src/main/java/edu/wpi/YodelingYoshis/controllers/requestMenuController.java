@@ -8,8 +8,8 @@ import javafx.fxml.FXML;
 
 public class requestMenuController {
 
-  //All below methods call corresponding scene setting methods in an instance of app
-  //These are called by the corresponding button in the Request Menu (requestmenu.fxml)
+  // All below methods call corresponding scene setting methods in an instance of app
+  // These are called by the corresponding button in the Request Menu (requestmenu.fxml)
   @FXML
   void securityServices(ActionEvent event) throws IOException {
     App.getInstance().setSceneToSecurityServicesRequest();
